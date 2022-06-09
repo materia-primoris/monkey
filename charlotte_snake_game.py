@@ -40,6 +40,9 @@ def draw_window(colour):
 
 
 def main():
+  green_grapes = pygame.Rect(100, 300, 110, 80)
+  # banana
+
   clock = pygame.time.Clock()
   run = True
   while run:
