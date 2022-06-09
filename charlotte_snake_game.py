@@ -18,20 +18,24 @@ purple = (150,0,100)
 FPS = 60
 
 green_grapes = pygame.image.load(os.path.join('assets','green_grapes.jpeg'))
-green_grapes = pygame.transform.scale(green_grapes, (55, 40))
+
+green_grapes = pygame.transform.scale(green_grapes, (110, 80))
 banana = pygame.image.load(os.path.join('assets','banana.jpeg'))
-banana = pygame.transform.scale(banana, (55, 40))
+banana = pygame.transform.scale(banana, (110, 80))
 monkey_eating_banana = pygame.image.load(os.path.join('assets','monkey_eating_banana.jpeg'))
-monkey_eating_banana = pygame.transform.scale(monkey_eating_banana, (55, 40))
+monkey_eating_banana = pygame.transform.scale(monkey_eating_banana, (110, 80))
 monkey_eating = pygame.image.load(os.path.join('assets','monkey_eating.jpeg'))
-monkey_eating = pygame.transform.scale(monkey_eating, (55, 40))
+monkey_eating = pygame.transform.scale(monkey_eating, (110, 150))
+
 
 def draw_window(colour):
   win.fill(colour)
   win.blit(green_grapes,(200,100))
 
+  win.blit(banana,(450,100))
+  win.blit(monkey_eating,(360,300))
+  win.blit(monkey_eating_banana,(160,300))
 
-  win.blit(banana, (400,100))
   pygame.display.update()
 
 
